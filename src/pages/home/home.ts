@@ -95,7 +95,8 @@ export class HomePage implements OnInit{
   	// add new data to firebase
   	this.ref.push({
   		name: this.name.username,
-  		message: this.newmessage
+			message: this.newmessage,
+			datetime: Date.now()
 		});
 		this.newmessage = '';
   }
